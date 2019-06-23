@@ -15,4 +15,17 @@ public class Employee {
 		super();
 	} 
 	
+	
+	Employee getInstance(String x) {
+		if (x.equalsIgnoreCase("manager")) {
+			return new Manger();
+		}else if(x.equalsIgnoreCase("baseEmployee")) {
+			return new BaseEmployee();
+
+		}else {
+			return null ; 
+		}
+		
+	}
+	
 }

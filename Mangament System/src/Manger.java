@@ -8,6 +8,13 @@ public class Manger extends Employee implements Observer {
 		this.projects = projects;
 	}
 
+	
+
+	public Manger() {
+		super();
+	}
+
+
 
 	@Override
 	public void update(String o) {
