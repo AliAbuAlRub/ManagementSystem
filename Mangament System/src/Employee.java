@@ -5,7 +5,7 @@ public class Employee {
 	private String name ; 
 	private int did ; 
 	private String email ;
-	private Qualifiqation[] qualifications;
+	private Qualification[] qualifications;
 	
 	public int getEid() {
 		return eid;
@@ -31,10 +31,10 @@ public class Employee {
 	public void setEmail(String email) {
 		this.email = email;
 	}
-	public Qualifiqation[] getQualifications() {
+	public Qualification[] getQualifications() {
 		return qualifications;
 	}
-	public void setQualifications(Qualifiqation[] qualifications) {
+	public void setQualifications(Qualification[] qualifications) {
 		this.qualifications = qualifications;
 	}
 	public Employee(int eid, String name, int did, String email) {

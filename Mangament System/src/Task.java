@@ -4,6 +4,7 @@ public class Task implements Observable {
 	private int id;
 	private Task[] tasks;
 	private boolean isdone;
+	private Qualification[] qualifications;
 	ArrayList<Observer> observers = new ArrayList<>() ;
 
 	@Override
