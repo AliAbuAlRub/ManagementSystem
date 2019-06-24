@@ -18,4 +18,20 @@ public class Project implements Observable {
 
 	}
 
+	public int getPid() {
+		return Pid;
+	}
+
+	public void setPid(int pid) {
+		Pid = pid;
+	}
+
+	public Task[] getTasks() {
+		return tasks;
+	}
+
+	public void setTasks(Task[] tasks) {
+		this.tasks = tasks;
+	}
+
 }

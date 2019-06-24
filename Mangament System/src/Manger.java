@@ -16,6 +16,18 @@ public class Manger extends Employee implements Observer {
 
 
 
+	public Project[] getProjects() {
+		return projects;
+	}
+
+
+
+	public void setProjects(Project[] projects) {
+		this.projects = projects;
+	}
+
+
+
 	@Override
 	public void update(String o) {
 		System.out.println(o);
