@@ -1,5 +1,5 @@
 
-public class Qualifiqation {
+public class Qualification {
 	private int qid;
 	private String description;
 
@@ -19,13 +19,13 @@ public class Qualifiqation {
 		this.description = description;
 	}
 
-	public Qualifiqation(int qid, String description) {
+	public Qualification(int qid, String description) {
 		super();
 		this.qid = qid;
 		this.description = description;
 	}
 
-	public Qualifiqation() {
+	public Qualification() {
 	}
 
 }
