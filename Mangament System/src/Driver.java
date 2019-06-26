@@ -10,7 +10,6 @@ public class Driver {
 		t[0] = new Task();
 		t[1] = new Task();
 		t[2] = new Task();
-
 		b1.setTasks(t);
 		t[0].registerObserver(m1);
 		t[0].setId(5778);
