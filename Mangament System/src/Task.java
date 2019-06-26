@@ -51,13 +51,20 @@ public class Task implements Observable {
 	@Override
 	public void notifyObservers() {
 		for (int i = 0; i < observers.size(); i++) {
-			observers.get(i).update("updated!!");
+			observers.get(i).update("the task with id : " + this.id + " is updated!!");
 		}
 	}
 
 	@Override
 	public void removeObserver(Observer observer) {
 		observers.remove(observer);
+	}
+
+	@Override
+	public void notifyObservers(String message) {
+		for (int i = 0; i < observers.size(); i++) {
+			observers.get(i).update(message);
+		}
 	}
 
 }

@@ -34,4 +34,10 @@ public class Project implements Observable {
 		this.tasks = tasks;
 	}
 
+	@Override
+	public void notifyObservers(String message) {
+		// TODO Auto-generated method stub
+
+	}
+
 }
