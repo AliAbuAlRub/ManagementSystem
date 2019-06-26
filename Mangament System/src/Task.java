@@ -9,7 +9,7 @@ public class Task implements Observable {
 
 	@Override
 	public void registerObserver(Observer observer) {
-
+		observers.add(observer);
 	}
 
 	public int getId() {
@@ -48,18 +48,16 @@ public class Task implements Observable {
 		return observers;
 	}
 
-	public void setObservers(ArrayList<Observer> observers) {
-		this.observers = observers;
-	}
-
 	@Override
 	public void notifyObservers() {
-
+		for (int i = 0; i < observers.size(); i++) {
+			observers.get(i).update("updated!!");
+		}
 	}
 
 	@Override
 	public void removeObserver(Observer observer) {
-
+		observers.remove(observer);
 	}
 
 }

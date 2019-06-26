@@ -1,10 +1,6 @@
 
 public class BaseEmployee extends Employee {
-	Task[] tasks ;
-
-	public BaseEmployee(int eid, String name, int did, String email) {
-		super(eid, name, did, email);
-	}
+	Task[] tasks;
 
 	public BaseEmployee() {
 		super();
@@ -17,7 +13,9 @@ public class BaseEmployee extends Employee {
 	public void setTasks(Task[] tasks) {
 		this.tasks = tasks;
 	}
-	
-	
-	
+
+	public void addTask(Task task) {
+
+	}
+
 }
